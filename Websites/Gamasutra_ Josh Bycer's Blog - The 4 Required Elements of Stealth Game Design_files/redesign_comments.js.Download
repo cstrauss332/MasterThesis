@@ -1,0 +1,34 @@
+var comments = new Object();
+
+comments.anonymous_comment = function(name) {
+	div = document.getElementById('user_name_comment');
+	web_div = document.getElementById('website_comment');
+	if (div.innerHTML == name) {
+		div.innerHTML = "Anonymous";
+        web_div.innerHTML = '<input type="text" name="website" size="20" disabled="disabled" class="anonymous_comment_yes">';	
+	}
+	else {
+		div.innerHTML = name;
+		web_div.innerHTML = '<input class="anonymous_comment_no" type="text" name="website_comment" size="20" />';
+	}
+}
+
+function alertHttpURL(content) {
+	var result = "";
+	var alertMsg = "";
+	var replacePattern1 = /(?:\s*src=\s*"\s*|href\s*="\s*)(http:\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;�]*[-A-Z0-9+&@#\/%=~_|�]\.(?:jpg|gif|png|jpeg|css|js))/gim;
+	var txt = content.match(replacePattern1);
+	len = txt.length;
+	if(len>0)
+	{
+		for(var i=0;i<len;i++)
+		{result = result+(i+1)+") "+txt[i].replace(/src\s*=\s*\"|href\s*=\s*\"/gi,'').trim()+"<br />";}
+		alertMsg = "<strong><span style=\"color:red\">Your content contains "+len+" Insecure URL(s)!</span></strong><br /><strong><span style=\"color:Black\">Please Use HTTPs For Following URL(s):</span></strong><br /><span style=\"color:Black\">"+result+"</span>";
+		document.getElementById("alertInsecureURL").innerHTML = alertMsg;
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}

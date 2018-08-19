@@ -1,0 +1,4 @@
+Number	Path	Coordinates
+0;WayPoint (9) (UnityEngine.Transform)-WayPoint (15) (UnityEngine.Transform)
+1;WayPoint (15) (UnityEngine.Transform)-WayPoint (11) (UnityEngine.Transform)
+2;WayPoint (11) (UnityEngine.Transform)-WayPoint (2) (UnityEngine.Transform);x=;21.97511;y=;2.400002

@@ -1,0 +1,16 @@
+/**/ WPCOMSharing.update_facebook_count({
+   "https://shapeofplay.wordpress.com/2013/03/17/game-heat-maps/": {
+      "share": {
+         "comment_count": 0,
+         "share_count": 0
+      },
+      "og_object": {
+         "id": "617302948393103",
+         "description": "Heat maps are an incredibly useful way to visualise critical player data\u00a0 from game sessions. They can collect and represent important statistics, with this data then being compiled and presented t\u2026",
+         "title": "USING HEAT MAPS TO INFORM DESIGN",
+         "type": "article",
+         "updated_time": "2017-07-01T23:01:43+0000"
+      },
+      "id": "https://shapeofplay.wordpress.com/2013/03/17/game-heat-maps/"
+   }
+});
